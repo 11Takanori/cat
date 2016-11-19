@@ -1,3 +1,5 @@
+extern crate getopts;
+
 use std::env;
 use std::io;
 use std::io::prelude::*;
