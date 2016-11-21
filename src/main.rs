@@ -24,13 +24,13 @@ fn with_line_number(content: String) -> String {
     lines.join("\n")
 }
 
-fn start(files: Vec<String>, flag_n:bool) {
-    for filename in files{
-        match run(filename){
+fn start(files: Vec<String>, flag_n: bool) {
+    for filename in files {
+        match run(filename) {
             Err(reason) => panic!(reason),
             Ok(content) => print!("{}", if flag_n {
                 with_line_number(content)
-            }else{
+            } else {
                 content
             })
         }
