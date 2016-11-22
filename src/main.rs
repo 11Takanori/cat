@@ -49,7 +49,7 @@ fn main() {
 
     parser.optflag("n", "", "Number the output lines, starting at 1.");
 
-    let options = match parser.parse(&args[1..]){
+    let options = match parser.parse(&args[1..])　{
         Ok(m) => {m}
         Err(f) => { panic!(f.to_string())}
     };
